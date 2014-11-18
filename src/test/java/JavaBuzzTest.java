@@ -2,6 +2,7 @@ import javabuzz.java.JavaBuzz;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -40,5 +41,25 @@ public class JavaBuzzTest {
     @Test
     public void isNotDivisibleByFifteen(){
         assertFalse(javabuzz.isDivisibleByFifteen(1));
+    }
+
+    @Test
+    public void sayJava(){
+        assertEquals("Java", javabuzz.says(3));
+    }
+
+    @Test
+    public void sayBuzz(){
+        assertEquals("Buzz", javabuzz.says(5));
+    }
+
+    @Test
+    public void sayJavaBuzz(){
+        assertEquals("JavaBuzz", javabuzz.says(15));
+    }
+
+    @Test
+    public void sayNumber(){
+        assertEquals("1", javabuzz.says(1));
     }
 }
