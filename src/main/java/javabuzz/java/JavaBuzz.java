@@ -18,16 +18,9 @@ public class JavaBuzz {
     }
 
     public String says(int number) {
-    String say = String.valueOf(number);
-        if(isDivisibleByThree(number)){
-            say = "Java";
-        }
-        if(isDivisibleByFive(number)) {
-            say = "Buzz";
-        }
-        if(isDivisibleByFifteen(number)) {
-            say = "JavaBuzz";
-        }
-        return say;
+        if(isDivisibleByFifteen(number)) return "JavaBuzz";
+        if(isDivisibleByThree(number)) return "Java";
+        if(isDivisibleByFive(number)) return "Buzz";
+        else return Integer.toString(number);
     }
 }
