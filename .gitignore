@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+JavaBuzzz.iml
+build.gradle
+build/
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
