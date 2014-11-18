@@ -9,6 +9,10 @@ public class JavaBuzz {
         return isDivisibleBy(number, 5);
     }
 
+    public boolean isDivisibleByFifteen(int number) {
+        return isDivisibleBy(number, 15);
+    }
+
     private boolean isDivisibleBy(int number, int divisor) {
         return number % divisor == 0;
     }

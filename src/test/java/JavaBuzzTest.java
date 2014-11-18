@@ -31,4 +31,14 @@ public class JavaBuzzTest {
     public void isNotDivisibleByFive(){
         assertFalse(javabuzz.isDivisibleByFive(1));
     }
+
+    @Test
+    public void isDivisibleByFifteen(){
+        assertTrue(javabuzz.isDivisibleByFifteen(15));
+    }
+
+    @Test
+    public void isNotDivisibleByFifteen(){
+        assertFalse(javabuzz.isDivisibleByFifteen(1));
+    }
 }
